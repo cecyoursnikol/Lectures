@@ -1,52 +1,34 @@
+
 // #include<stdio.h>
 // int main()
 // {
+// 	float p,r,t,int_amt;
+// 	printf("principle,rate of intrest & time to find simple intrest: \n");
+// 	scanf("%f,%f,%f",&p,&r,&t);
+// 	int_amt=(p*r*t)/100;
+// 	printf("simple intrest = %f",int_amt);
 
-// float marks ;
-
-// 	printf("Enter your marks : ");
-// 	scanf("%f" ,&marks);
-
-// 	if(marks>=80 && marks<=100)
-// 	{
-// 		printf("A\n");
-// 	}
-// 	else if(marks>=60 && marks<80)
-// 	{
-// 			printf("B\n");
-// 	}
 
 
 // }
-
-
 #include<stdio.h>
-int main ()
+int main()
 {
-	float marks;
-	printf("Enter your marks : ");
-	scanf("%f" , &marks);
+	int num1,num2;
+	printf("Enter two number");
+	scanf("%d %d" ,&num1,&num2 );
+	if(num1<num2)
+	{
+		printf("%d is smaller number", num1 );
+	}
+	else if(num2<num1)
 
-	if(marks>= 80 && marks <=100)
 	{
-		printf("A\n");
+		printf("%d is smaller number",num2 );
 	}
-	else if(marks>=60 && marks <80)
+	else
 	{
-		printf("B\n");
-	}
-	else if(marks>=40 && marks < 60)
-	{
-		printf("C\n");
-	}
+		printf("%d and %d are equal", num1,num2 );
 
+	} 
 }
-
-
-
-
-
-
-
-
-

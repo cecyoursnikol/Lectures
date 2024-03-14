@@ -1,32 +1,20 @@
 #include<stdio.h>
-int n,i; 
-int find_max(int a[])
-{
-	int max = a[0];
 
-	for(i=0;i<n;i++)
-	{
-		if(a[i]>max)
-		{
-			max = a[i];
-		}
-	}
-	return max; 
+
+void increment(int *salary)
+{
+
+	*salary = *salary+1000; 
+	printf("does it work : %d\n",*salary); 
 }
 int main()
 {
-	int a[100];
-	int max_ans; 
+	int salary = 9000; 
 
-	printf("Enter the size : ");
-	scanf("%d",&n);
-    
-    printf("Enter the array :  \n");
-    for(i=0;i<n;i++)
-    {
-    	printf("Enter a[%d] : ",i );
-    	scanf("%d",&a[i]);
-    }
-    max_ans = find_max(a);
-    printf("max : %d\n",max_ans);
+	printf("old salary : %d\n",salary);
+
+	increment(&salary);
+
+	printf("New salary : %d\n",salary);
+	return 0; 
 }

@@ -1,23 +1,20 @@
 #include<stdio.h>
-void LowerToUpper(char s[])
+
+void displaytable(int n)
 {
 	int i; 
-	for(i=0;s[i];i++)
+
+	for(i=0;i<= 10;i++)
 	{
-		if(s[i]>='a' && s[i]<='z')
-		{
-			s[i] = s[i]-32; 
-		}
+		printf("%d x %d = %d\n",n,i,n*i);
 	}
 }
 int main()
 {
-	char str[100];
+	int x; 
+	printf("Enter the number : ");
+	scanf("%d",&x);
 
-	printf("Enter the string : ");
-	scanf("%s",str);
+	displaytable(x); 
 
-	LowerToUpper(str); 
-
-	printf("New string %s\n",str);
 }

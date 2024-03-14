@@ -1,51 +1,24 @@
+#include <stdio.h>
 
-#include<stdio.h>
 int main()
 {
-    int day;
 
-    printf("enter the day number : ");
-    scanf("%d",&day);
+    int a = 10;
 
+    a += 7;
+    printf("new value after += %d\n", a);
 
-    if(day==1)
-    {
-        printf("monday\n");
+    a -= 5;
+    printf("new value after -= %d\n", a);
 
-    }
-    else if(day==2)
-    {
-        printf("tuesday\n");
-    }
-    else if(day==3)
-    {
-        printf("wedneshday\n");
+    a *= 4;
+    printf("new value after *= %d\n", a);
 
-    }
-    else if(day==4)
-    {
-        printf("thursday\n");
-    }
-    else if(day==5)
-    {
-        printf("friday\n");
-    }
-    else if(day==6)
-    {
-        printf("saturday\n");
-    }
-    else if(day==7)
-    {
-        printf("sunday");
-    }
+    a /= 5;
+    printf("new value after /= %d\n", a);
 
+    a %= 2;
+    printf("new value after %%= %d\n", a);
 
-
-    else
-    {
-        printf("invalid day..");
-    }
-
-    
-
+    return 0;
 }

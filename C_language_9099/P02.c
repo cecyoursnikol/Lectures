@@ -1,24 +1,28 @@
 
+#include<stdlib.h>
 #include<stdio.h>
 int main()
 {
+    int n;
+    int a,b;
 
-    // x++ : post increment
-    // ++x : pre increment
+    printf("enter the number : ");
+    scanf("%d",&n);
 
-    int n=28;
-    
-    printf("during post increment : %d\n",n++);
-    printf(" after post increment : %d\n",n);
+    while(n>0)
+    {
+        printf("enter expresion : ");
+        scanf("%d,%d",&a,&b);
+        system("clear");
 
-    printf("--------------\n");
 
-    printf("during pre increment : %d\n",++n);
-    printf("after pre incremet : %d\n",n);
-
-                    
-    
-
+        printf("%d + %d = %d\n",a,b,a+b);
+        printf("%d - %d = %d\n",a,b,a-b);
+        printf("%d * %d = %d\n",a,b,a*b);
+        printf("%d / %d = %d\n",a,b,a/b);
+        printf("%d %% %d = %d\n",a,b,a%b);
+        n--;
+    }
 
     return 0;
 }

@@ -1,14 +1,17 @@
-
 #include<stdio.h>
 int main()
 {
-    int i;
-    for(i=1;i<=100;i=i+2)
+    int a = 14;
+    int b = 6;
+    int c;
 
-    {
-        printf("hello world\n",i);
+    c = a&b;
+    printf("%d & %d = %d\n",a,b,c);
 
-    }
+
+    c = a|b;
+    printf("%d | %d = %d\n",a,b,c);
+
 
     return 0;
 }

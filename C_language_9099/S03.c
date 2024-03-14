@@ -1,20 +1,16 @@
-
 #include<stdio.h>
-int main()
-{
+ int main()
+ {
+    int a = 20;
+    
+    int *p;
 
-    int month;
+    printf("%d at adress : %p = %u\n",a,&a,&a);
 
-    printf("enter the month : ");
-    scanf("%d",&month);
-
-    if(month==1)
-    {
-        printf("january");
-    }
+    p = &a;
+    printf("%d at adress : %p %u\n",*p,p,p);
 
 
 
 
-    return 0;
-}
+ }

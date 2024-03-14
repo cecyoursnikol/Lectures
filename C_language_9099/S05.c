@@ -1,15 +1,19 @@
-
 #include<stdio.h>
 int main()
 {
-    int i,n;
+    float marks;
 
-    printf("enter the number : ");
-    scanf("%d",&n);
+    printf("enter the marks :");
+    scanf("%f",&marks);
 
-    for(i=1;i<=10;i++)
-    printf("%3d x %3d = %3d\n",n,i,n*i);
-    printf("----");
+    if(marks>=33 && marks<=100)
+    {
+        printf("passed");
 
-    return 0;
+    }
+    else
+    {
+        printf("failed..");
+    }
+    return(0);
 }

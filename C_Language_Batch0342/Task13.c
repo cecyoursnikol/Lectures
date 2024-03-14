@@ -1,23 +1,24 @@
 #include<stdio.h>
-
-struct Student{
-
-	char name[100];
-	int rollNo;
-};
 int main()
 {
+	FILE *fp; 
 
-	
-	struct Student s; 
+	char ch; 
+	int n; 
+	fp = fopen("code.txt","w+");
 
+	fprintf(fp,"1234567890123456789012345678901234567890");
 
-	printf("Enter your name : ");
-	scanf("%s",s.name);
+	printf("Enter the pointer position :");
+	scanf("%d",&n);
+	fseek(fp,n,0);
+	fgetc(fp); 
+	fgetc(fp); 
 
-	printf("Enter your rollNo : ");
-	scanf("%d",&s.rollNo);
+	printf("data : %d\n",ftell(fp));
+	while((ch=fgetc(fp))!=EOF)
+	{
+		printf("%c",ch); 
+	}
 
-	printf("------------------------------\n");
-	printf("Welcome %s your rollNo is %d\n",s.name,s.rollNo); 
 }

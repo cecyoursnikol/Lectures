@@ -1,19 +1,33 @@
-#include<stdio
-.h>
-
-void increment(int salary)
+#include<stdio.h>
+int i,n; 
+int find_max(int a[])
 {
-	salary = salary+1000; 
-	printf("does it works : %d\n",salary);
+	int max = a[0];
+	for(i=0;i<n;i++)
+	{
+		if(a[i]>max)
+		{
+			max = a[i];
+		}
+
+	}
+	return max; 
 }
 int main()
 {
-	int salary = 9000; 
+	int a[100];
+	int max_ans; 
 
-	printf("Old salary : %d\n",salary);
+	printf("Enter the size : ");
+	scanf("%d",&n);
 
-	increment(salary);
+	printf("Enter the array : \n");
+	for(i=0;i<n;i++)
+	{
+		printf("a[ %d ] :",i);
+		scanf("%d",&a[i]);
+	}
+	max_ans = find_max(a); 
 
-	printf("New salary : %d\n",salary);
-	return 0; 
+	printf("max : %d\n",max_ans); 
 }

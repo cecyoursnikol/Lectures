@@ -1,18 +1,34 @@
+
 #include<iostream>
 using namespace std;
-
 int main()
-{
-    int n;
+{   
+    int start,end,i,j;
 
-    cout<<" Enter a positive integer : ";
-    cin >> n;
+    cout<<"Enter start end : ";
+    cin >>start>>end;
 
-    for(int i = 1; i <= 10; i++){
-        cout<< n << " * " << i << " = " << n * i << endl;
+    
+    for(j=1;j<=10;j++)
+        {
+
+           
+            int n = i;
         
-    }
-    
+                 for(i=start;i<=end;i++)
+                    {
+
+                    
+                         cout<<i<<" X "<<j<<" = "<<(i*j)<<"\t";
+                         
+                        
+                        
+                    }
+                    cout<<endl;
+        
+        }
+   
+
     return 0;
-    
+
 }

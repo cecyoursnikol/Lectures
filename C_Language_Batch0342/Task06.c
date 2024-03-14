@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-	int i = 10; 
+	int i=10; 
 	int *p; 
 
-	p=&i; 
+	printf("Address of i : %x\n",&i); 
+	scanf("Value : %d\n",i); 
 
-	printf("address of i : %X\n",&i); 
-	printf("value : %d\n",i);
+	printf("---------------------\n");
 
-	printf("--------------------------\n");
+	printf("Address of i : %x\n",p); 
+	scanf("Value : %d\n",*p); 
 
-	printf("address : %X\n",p); 
-	printf("value : %d\n",*p);
 }

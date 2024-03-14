@@ -1,22 +1,20 @@
-
 #include<stdio.h>
+#include<stdlib.h>
+
 int main()
 {
-    int n;
-    int i,j;
+    char ch;
 
+    printf("do you want to exit :");
+    scanf("%c",&ch);
 
-
-    printf("enter the  size : ");
-    scanf("%d",&n);
-
-    for(i=0;i<n;i++)
+    if(ch=='y' || ch=='Y')
     {
-        for(j=0;j<n;j++)
-        printf(" \u2290 ");
+        printf("exit...");
+        exit(0);
 
-        printf("\n");
     }
+    
+    printf("welcome..");
 
-    return 0;
 }

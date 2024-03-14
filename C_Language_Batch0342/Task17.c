@@ -1,19 +1,30 @@
-
-
 #include<stdio.h>
-int main()
+#include<stdlib.h>
+struct Node{
+	int data; 
+	struct Node *next = NULL; 	
+
+}*head;
+
+void insert(int n)
 {
-	FILE *fp; 
+	struct Node *newNode,*temp; 
+	newNode = (struct Node*)malloc(sizeof(struct Node)); 
+	newNode->data = n; 
 
-	char ch[100]; 
-
-	fp = fopen("Avi.txt","r");
-
-	printf("%s sdds\n",ch);
-
-	while((fscanf(fp,"%s",ch))!=EOF)
+	if(head==NULL)
 	{
-		printf("%s ",ch); 
-	// fscanf(fp,"%s",ch);
+		head = newNode; 
+	}
+	else{
+
+		temp = head; 
+		while(temp->next!=NULL)
+		{
+			temp = temp->next; 
+		}
+		temp->next = newNode; 
 	}
 }
+
+void c

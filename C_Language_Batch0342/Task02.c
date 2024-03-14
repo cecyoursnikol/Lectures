@@ -1,20 +1,15 @@
 #include<stdio.h>
-
-
-void increment(int *salary)
+void sum(int a,int b)
 {
-	*salary=*salary+1000;
-	printf("does it works : %d\n",*salary);
-	increment(&x);
-	
+	int c;
+	c = a,b; 
+	printf("%d + %d = %d",a,b,c);
 }
-int main()
+void main()
 {
-	int x=9000; 
-	printf("old salary : %d\n",x);
+	int a,b; 
+	printf("Enter 2 number : ");
+	scanf("%d,%d",&a,&b); 
 
-	increment(&x);
-
-	printf("new salary : %d\n",x);
-	return 0; 
+	sum(a,b); 
 }
