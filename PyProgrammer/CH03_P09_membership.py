@@ -4,7 +4,7 @@ fruits = ["Apple","Banana","Mango","Cherry"]
 x = input("Enter your requirement : ")
 
 if x in fruits:
-    print("available .. ",x);
+    print("available .. ",x)
 
 if x not in fruits:
     print(x,"is not unavailable, plz buy another choose  any",fruits)
